@@ -1,65 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Sync</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" id="projectSyncViewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Manual"/>
+
+  <!-- Favicon -->
+  <link rel="icon" sizes="192x192" href="/assets/favicon-192.png" type="image/png"/>
+  <link rel="shortcut icon" href="/assets/favicon-32.png" type="image/png"/>
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" type="image/png"/>
+
+  <title>Project Sync Arena</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 2rem;
-      margin: 0;
-      background-color: #f5f7fa;
-      color: #333;
-    }
-    header {
-      text-align: center;
-      padding-bottom: 1rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #2b4a78;
-    }
-    p {
-      max-width: 600px;
-      margin: 1rem auto;
-    }
-    footer {
-      margin-top: 3rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    a {
-      color: #2b4a78;
-      text-decoration: none;
-    }
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #0d0d0d; color: #f0f0f0; }
+    header { background: linear-gradient(135deg, #1a1a1a, #3a0000); color: #fff; text-align: center; padding: 3rem 1rem; }
+    header h1 { margin: 0; font-size: 3rem; letter-spacing: 1px; }
+    header p { margin: 1rem 0; font-size: 1.2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .cta-button { display: inline-block; margin-top: 1.5rem; padding: 0.75rem 1.5rem; background-color: #e63946; color: #fff; text-decoration: none; font-size: 1rem; border-radius: 6px; }
+    main { padding: 2rem 1rem; max-width: 1000px; margin: 0 auto; }
+    .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 2rem 0; }
+    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    .video-link { text-align: center; margin-top: 0.5rem; }
+    .video-link a { color: #e63946; text-decoration: none; font-size: 0.9rem; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .feature { background: #1a1a1a; padding: 1.5rem; border-radius: 8px; text-align: center; }
+    .feature h3 { margin-top: 0; color: #e63946; }
+    footer { background-color: #000; text-align: center; padding: 1rem; font-size: 0.9rem; color: #777; }
+    a { color: #e63946; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Project Sync</h1>
-    <p>Your time, motivation, and tasks — finally in sync.</p>
+    <h1>Project Sync Arena</h1>
+    <p>Enter the fast‑paced arena shooter where reflexes decide your fate. Fight solo, squad up, and climb the ranks in adrenaline‑fueled combat.</p>
+    <a href="https://example.com/download" class="cta-button">Play Now</a>
   </header>
 
   <main>
-    <p>
-      Project Sync is a productivity assistant designed for people who work best when things feel aligned. Whether you're managing ADHD, juggling deadlines, or just trying to get out of bed on time — we're here to help.
-    </p>
-    <p>
-      Our lightweight app uses structured planning and motivational tools to guide you through your day, one realistic goal at a time.
-    </p>
-    <p>
-      💡 Focus. 🔄 Reset. ✅ Progress.
-    </p>
-    <p style="text-align:center;">
-      <a href="/privacy-policy.html">Read our Privacy Policy</a>
-    </p>
+    <section class="video-container">
+      <iframe src="https://www.youtube.com/embed/ly4rZ2UhJvY" frameborder="0" allowfullscreen title="Project Sync Arena Trailer"></iframe>
+    </section>
+    <div class="video-link">
+      <a href="https://www.youtube.com/watch?v=ly4rZ2UhJvY" target="_blank">Watch the full trailer on YouTube</a>
+    </div>
+
+    <section class="features">
+      <div class="feature">
+        <h3>High‑Octane Combat</h3>
+        <p>Fast respawns, power‑ups, and weapons galore—stay on your toes in every match.</p>
+      </div>
+      <div class="feature">
+        <h3>Custom Loadouts</h3>
+        <p>Tailor your gear with customizable weapons, armor mods, and unique perks.</p>
+      </div>
+      <div class="feature">
+        <h3>Online Multiplayer</h3>
+        <p>Seamless matchmaking and cross-platform play powered by Epic Online Services.</p>
+      </div>
+      <div class="feature">
+        <h3>Ranked Seasons</h3>
+        <p>Compete in seasonal ladders, earn rewards, and prove your arena dominance.</p>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Project Sync by Sync</p>
-    <p><a href="mailto:brynnbates@outlook.com">Contact Us</a></p>
+    <p>© 2025 Project Sync Arena by Sync</p>
+    <p><a href="mailto:brynnbates@outlook.com">Contact Support</a></p>
+    <p><a href="/privacy-policy.html">Privacy Policy</a></p>
   </footer>
 </body>
 </html>
