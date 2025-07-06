@@ -13,21 +13,104 @@
 
   <title>Project Sync Arena</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background-color: #0d0d0d; color: #f0f0f0; }
-    header { background: linear-gradient(135deg, #1a1a1a, #3a0000); color: #fff; text-align: center; padding: 3rem 1rem; }
-    header h1 { margin: 0; font-size: 3rem; letter-spacing: 1px; }
-    header p { margin: 1rem 0; font-size: 1.2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
-    .cta-button { display: inline-block; margin-top: 1.5rem; padding: 0.75rem 1.5rem; background-color: #e63946; color: #fff; text-decoration: none; font-size: 1rem; border-radius: 6px; }
-    main { padding: 2rem 1rem; max-width: 1000px; margin: 0 auto; }
-    .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 2rem 0; }
-    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-    .video-link { text-align: center; margin-top: 0.5rem; }
-    .video-link a { color: #e63946; text-decoration: none; font-size: 0.9rem; }
-    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
-    .feature { background: #1a1a1a; padding: 1.5rem; border-radius: 8px; text-align: center; }
-    .feature h3 { margin-top: 0; color: #e63946; }
-    footer { background-color: #000; text-align: center; padding: 1rem; font-size: 0.9rem; color: #777; }
-    a { color: #e63946; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+    }
+    header {
+      background: linear-gradient(135deg, #1a1a1a, #3a0000);
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin: 1rem auto;
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #e63946;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      border-radius: 6px;
+    }
+    main {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Video centering & responsive sizing */
+    .video-wrapper {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .video-link {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+    .video-link a {
+      color: #e63946;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .feature {
+      background: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .feature h3 {
+      margin-top: 0;
+      color: #e63946;
+    }
+
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    footer a {
+      color: #e63946;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
@@ -38,38 +121,19 @@
   </header>
 
   <main>
-<style>
-  .video-wrapper {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0;
-  }
-  .video-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px;     /* decent max width */
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  }
-  .video-container iframe {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>
+    <div class="video-wrapper">
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/flWdGMN5zaY?autoplay=1&mute=1"
+          title="Project Sync Arena Trailer"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
 
-<div class="video-wrapper">
-  <div class="video-container">
-    <iframe
-      src="https://www.youtube.com/embed/flWdGMN5zaY?autoplay=1&mute=1"
-      title="Project Sync Arena Trailer"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen>
-    </iframe>
-  </div>
-</div>
     <section class="features">
       <div class="feature">
         <h3>High‑Octane Combat</h3>
