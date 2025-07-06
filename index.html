@@ -38,8 +38,38 @@
   </header>
 
   <main>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/flWdGMN5zaY?si=cX4JFbdExGT3LKxO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<style>
+  .video-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;     /* decent max width */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
 
+<div class="video-wrapper">
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/flWdGMN5zaY?autoplay=1&mute=1"
+      title="Project Sync Arena Trailer"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
     <section class="features">
       <div class="feature">
         <h3>High‑Octane Combat</h3>
